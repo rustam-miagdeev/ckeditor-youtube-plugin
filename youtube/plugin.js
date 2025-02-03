@@ -363,7 +363,7 @@
  * @url: http://stackoverflow.com/a/10315969/624466
  */
 function ytVidId(url) {
-	var p = /^(?:https?:\/\/)?(?:(?:www|m).)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+	var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|(?:shorts\/)|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
 	return (url.match(p)) ? RegExp.$1 : false;
 }
 
